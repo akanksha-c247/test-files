@@ -1,0 +1,24 @@
+/* variables.css */
+
+:root {
+    --brand-blue-1: #379ACD;
+    /* --neutral-white: #ffffff; */
+    --body-16-font-family: 'Arial', sans-serif;
+    --body-16-font-size: 16px;
+    --body-16-font-style: normal;
+    --body-16-font-weight: 400;
+    --body-16-letter-spacing: 1px;
+    --body-16-line-height: 1.5;
+    --nav-padding: 0px 15px;
+    --nav-width: 1140px;
+    --flex-gap: 10px;
+    --icon-height-width: 24px;
+    --font-color: #000000;
+    --font-family: var(--body-16-medium-font-family);
+    --font-size: var(--body-16-medium-font-size);
+    --font-style: var(--body-16-medium-font-style);
+    --font-weight: var(--body-16-medium-font-weight);
+    --letter-spacing: var(--body-16-medium-letter-spacing);
+    --line-height: var(--body-16-medium-line-height);
+  }
+  
