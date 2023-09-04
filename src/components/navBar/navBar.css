@@ -6,7 +6,6 @@
   position: relative;
   margin-left: var(--margin-right);
   width: 100%;
-  /* --margin-right: 85px; */
   --space-between: 32px;
 }
 
@@ -28,22 +27,22 @@
   margin: 50px;
   padding: 0;
   display: inline-flex;
-  /* flex: 0 0 auto; */
-  /* border: 1px solid black; */
   width: 90%;
   justify-content: space-around;
-  /* gap: var(--space-between); */
 }
 
 .div-container li {
-  /* margin-right: var(--space-between); */
   display: flex;
   align-items: flex-start;
   flex: 0 0 auto;
   position: relative;
 }
 
-/* Media Query for Mobile Screens */
+.text-wrapper-class a{
+  text-decoration: none;
+  color: black;
+}
+
 @media (max-width: 768px) {
   .navBar {
     flex-direction: column;

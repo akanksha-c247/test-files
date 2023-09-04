@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import Phone from "../inputFields/Phone";
 import Location from "../inputFields/Location";
-import Search from "../inputFields/Search";
+import Search from "../inputFields/search/index";
 
 export const Header = () => {
   const handleSearch = (query) => {

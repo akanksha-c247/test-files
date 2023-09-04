@@ -1,5 +1,6 @@
 import React from 'react';
-import searchImg from '../../assets/img/search.svg'
+import searchImg from '../../../assets/img/search.svg'
+import './search.css'; 
 
 const Search = ({ placeholder, className, onSearch }) => {
   const [query, setQuery] = React.useState('');
