@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+    // display: flex;
+    // overflow: hidden;
+    text-align: center;
+    color: black;
+    justify-content: center;  
+
+    .card-image {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 55px;
+    left: 246px;
+    z-index: 1;
+    }
+  
+    .card-content {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-10%, -50%);
+      z-index: 1;
+    }
+  }
+  

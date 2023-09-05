@@ -6,11 +6,12 @@ export const Button = ({
   arrowColor = "white",
   textColor = "white",
   backgroundColor = "blue",
-  width = "140px",  // Default width
-  height = "30px"  // Default height
+  width = "140px",  
+  height = "30px"  ,
+  className
 }) => {
   return (
-    <div className="button-wrapper" style={{ width, height, backgroundColor }}>
+    <div className={className} style={{ width, height, backgroundColor }}>
       <div className="rounded-button" style={{ color: textColor }}>
         {label}
       </div>

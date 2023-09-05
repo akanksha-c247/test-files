@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  margin-top:-120px ;
+  .content-row {
+     display: flex;
+
+  .col-6 {
+    width: 50%;
+    .wrap-text{
+      color: #1c519d;
+      text-align: left;
+    }
+    .route-optimization{
+      text-align: left;
+      }
+    .routingWarper{
+      color: black;
+    }
+    .buttonTextAbout{
+      display: flex;
+      width: 220px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      position: relative;
+      background-color: var(--neutral-white);
+      border-radius: 32px;
+      border: 1px solid;
+      border-color: var(--brand-blue-2);    
+    }
+  }
+}
+}

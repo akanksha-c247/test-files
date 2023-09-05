@@ -1,0 +1,150 @@
+ .box {
+   width: 100%;
+   height: 100vh;
+   position: relative;
+
+ }
+ 
+ .box .vector {
+  height: 600px;
+  left: 0;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  width: 100%;
+}
+
+.roc {
+  position: absolute;
+  // top: 190px;
+  margin-top: 700px;
+  left: 450px;
+  z-index: 0;
+
+  .ellipseImg{
+    width: 528px;
+  }
+}
+
+.roc .eimageFour {
+  width: 644px;
+  height: 450px;
+  object-fit: cover;
+}
+
+ .banner {
+   z-index: -1;
+   width: 100%;
+   height: 90vh;
+   top: 23%;
+   left: 0;
+   position: absolute;
+ }
+ 
+ .bannerGraph {
+   width: 90%;
+   height: 50vh;
+   position: absolute;
+  //  top: 15%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   left: 5%;
+   align-items: center;
+ }
+ 
+ .ellipseImg {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: 10%;
+  left: 800px;
+  z-index: -1;
+}
+ 
+.performance {
+  width: 50%;
+  color: #ffffff;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 23px;
+  padding-top: 120px;
+  text-align: left;
+}
+.buttonTextAbout{
+  display: flex;
+  width: 406px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  background-color: var(--brand-green);
+  border-radius: 32px;
+  margin-left: 25px;
+}
+/* .performance .textPerformance{
+
+} */
+
+ /* Media Query for Tablet Screens */
+ @media (max-width: 1024px) {
+   .inner {
+     flex-direction: column;
+     align-items: center;
+     height: auto;
+   }
+   .performance {
+     width: 80%;
+     left: 10%;
+     top: 60%;
+     
+   }
+   .ellipseImg {
+     height: 400px;
+     width: 400px;
+     top: 30%;
+     left: calc(50% - 200px);
+   }
+ }
+ 
+ /* Media Query for Mobile Screens */
+ @media (max-width: 768px) {
+   .inner {
+     top: 10%;
+     left: 2%;
+     width: 96%;
+   }
+   .performance {
+     width: 90%;
+     left: 5%;
+     top: 70%;
+     font-size: 16px;
+   }
+   .ellipseImg {
+     height: 300px;
+     width: 300px;
+     top: 20%;
+     left: calc(50% - 150px);
+   }
+ }
+  
+ .arrow {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 50;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}

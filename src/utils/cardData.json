@@ -1,0 +1,34 @@
+[
+    {
+      "imageUrl": "img/buisnessProcess.png",
+      "title": "It's NOT About the Technology",
+      "content": "Its about the PEOPLE! Focus on the business processes to improve before even considering buying software."
+
+    },
+    {
+      "imageUrl": "img/garbage.png",
+      "title": "Garbage In, Garbage Out",
+      "content": "Data quality is the 2nd reason for failure. Ensure your customer data, logs and other performance data is fairly accurate."
+    },
+    {
+      "imageUrl": "img/group.png",
+      "title": "Stakeholder Participation",
+      "content": "Absolutely critical! Involve upper management, unions, IT, and especially get the crews to be involved in every step."
+    },
+    {
+      "imageUrl": "img/right-person.png",
+      "title": "Right Person for the Right Job",
+      "content": "Many assign the route supervisors to manage the implementation. They may struggle with the advanced technology and need enough time to really learn it."
+    },
+    {
+      "imageUrl": "img/data.png",
+      "title": "Don't Sweat the Little Stuff",
+      "content": "Dealing with large customer databases with a few dubious records, it is better to note them for later versus trying to fix every little problem. Perfection kills progress."
+    },
+    {
+      "imageUrl": "img/intigration.png",
+      "title": "Systems Integration",
+      "content": "You need frequently updated data, which means you must integrate the systems with GIS, ERP, work orders, CRM, billing, etc. Plan for this well in advance."
+    }
+  ]
+  

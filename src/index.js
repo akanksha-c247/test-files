@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './assets/css/variables.scss';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import './assets/css/variables.scss'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

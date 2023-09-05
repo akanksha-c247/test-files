@@ -1,8 +1,28 @@
+.textSystem {
+  text-align: center;
+  margin-top: 115px;
+  h1 {
+    color: #379acd;
+  }
+}
+.route-services {
+    background-color: '#EBF8EF';
+  .services {
+    color: #1c519d;
+  }
 
-.textSystem{
-    text-align: center;
-    margin-top: 115px;
-    h1{
-        color: #379ACD;
-    }
+  .buttonTextHome {
+    display: flex;
+    width: 220px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: var(--neutral-white);
+    border-radius: 32px;
+    border: 1px solid #1c519d;
+    margin-left: 800px;
+  }
 }

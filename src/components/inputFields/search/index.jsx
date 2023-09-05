@@ -2,7 +2,7 @@ import React from 'react';
 import searchImg from '../../../assets/img/search.svg'
 import './search.css'; 
 
-const Search = ({ placeholder, className, onSearch }) => {
+const Search = ({ placeholder, className, onSearch,search }) => {
   const [query, setQuery] = React.useState('');
 
   const handleInputChange = (e) => {
@@ -22,7 +22,7 @@ const Search = ({ placeholder, className, onSearch }) => {
         value={query} 
         onChange={handleInputChange} 
       /> 
-      <button onClick={handleSearchClick}>Search</button>
+      <button onClick={handleSearchClick}>{search}</button>
     </div>
   );
 };

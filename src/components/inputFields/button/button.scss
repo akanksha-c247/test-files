@@ -1,10 +1,8 @@
-// button.scss
-
 .button-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px; // This will round the corners of the button-wrapper
+  border-radius: 25px; 
 
   .rounded-button {
     cursor: pointer;
@@ -13,6 +11,6 @@
 
   .arrow-instance {
     font-size: 16px;
-    margin-left: -10px; // Adjust this to bring the arrow closer to the text
+    margin-left: -10px; 
   }
 }
