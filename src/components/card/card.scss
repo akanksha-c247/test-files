@@ -1,26 +1,32 @@
 .card {
-    position: relative;
-    // display: flex;
-    // overflow: hidden;
-    text-align: center;
-    color: black;
-    justify-content: center;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px; 
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     .card-image {
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    top: 55px;
-    left: 246px;
-    z-index: 1;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
     }
   
     .card-content {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-10%, -50%);
-      z-index: 1;
+      text-align: center;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+  
+      p {
+        margin-top: 10px;
+        white-space: pre-line;
+      }
     }
   }
   

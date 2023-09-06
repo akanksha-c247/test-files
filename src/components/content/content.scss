@@ -1,0 +1,54 @@
+.image-with-content {
+    position: relative; 
+    // display: flex;   
+
+    &.left-image {
+        flex-direction: row;
+      }
+    
+      &.top-image {
+        flex-direction: column;
+      }
+  
+    .text-content {
+      display: flex;
+      flex-direction: column;
+
+      &.left-image .overlay-title {
+        border-radius: 0;
+      } 
+      &.service-image .overlay-title {
+        border-radius: 30px 0px 0px 0px;
+        background: #EBF8EF; 
+      }
+    }
+    
+  
+    .overlay-title {
+      position: absolute; // Positions it absolutely within the relative container
+      top: 0;
+      left: 0;
+      border-radius: 30px 0px 0px 0px;
+      padding: 10px;
+      z-index: 1; // Makes sure it appears above the image
+    }
+  
+    .content-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+      .line-with-icon {
+        display: flex;
+        align-items: center;
+      
+        .checkmark-icon {
+          margin-left: 10px; // Adjust as needed
+        }
+      }
+      .content-text {
+        white-space: pre-line;
+      }
+    }
+  }
+  

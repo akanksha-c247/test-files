@@ -10,10 +10,11 @@ import './home.scss';
 import { Button } from "../../components/inputFields/button";
 import { AccordianPage } from "../answerQuestion";
 import { FeedBackPage } from "../feedBack";
-import projectImage from '../../assets/img/projects.svg'
-import homeImage from '../../assets/img/home.svg';
-import vehicleImage from '../../assets/img/vehicle.svg';
-import savingImage from '../../assets/img/savings.svg'
+import ImageWithContent from "../../components/content";
+import collectioRoute from '../../utils/collectionRouting.json'
+import Artical from "../articals";
+import { RoutingForm } from "../routingForm";
+import { Footer, FooterPage } from "../footer";
 
 export const Home = () => {
   return (
@@ -46,15 +47,12 @@ export const Home = () => {
         <h1 className="services">Route Optimization Services</h1>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px' }}>
         {routeCard.slice(0, 3).map((card, index) => (
-          <Card
+          <ImageWithContent
             key={index}
             imageUrl={card.imageUrl}
-            title={card.title}
             content={card.content}
-            bgColor='white'
-            width={500}  
-            height={500}
-            alt='image'
+            title={card.title}
+            layout="service-image"
           />
         ))}
       </div>
@@ -62,15 +60,26 @@ export const Home = () => {
       </div>
       <div>
       <h1>Optimizing Waste Collection Routing Since 2000</h1>
-      <div>
-        <div className="col-3"><img src={projectImage} alt="projectimage"/></div>
-        <div className="col-3"><img src={homeImage} alt="homeimage"/></div>
-        <div className="col-3"><img src={vehicleImage} alt="vehcleimag"/></div>
-        <div className="col-3"><img src={savingImage} alt="savingimage"/></div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px' }}>
+        {collectioRoute.slice(0, 4).map((card, index) => (
+          <ImageWithContent
+            key={index}
+            imageUrl={card.imageUrl}
+            content={card.content}
+            title={card.title}
+            layout="left-image"
+          />
+        ))}
       </div>
       </div>
       <AccordianPage/>
       <FeedBackPage/>
+      <Artical/>
+      <RoutingForm/>
+      <FooterPage/>
+      <div className="footer-copyright">
+        <p>&copy; 2023 My Company. All rights reserved.</p>
+      </div>
       <div>
       </div>
     </>

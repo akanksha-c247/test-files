@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../../assets/img/circleImage.png";
-import cricleDash from "../../assets/img/CircleImage/cricleDash.png";
 import "./routePlanning.scss";
 import { Button } from "../../components/inputFields/button";
 
@@ -16,8 +15,9 @@ export const RoutePlanning = () => {
               on Accurate Route Planning
             </h1>
             <p className="solid-waste-system">
-              Solid waste system changes are tough.
-              <br /> Municipal solid waste managers traverse critique and
+            <span className="gap-after">Solid waste system changes are tough.</span>
+              &nbsp;
+              <br /><span className="gap-after"> Municipal solid waste managers traverse critique and
               criticism in driving
               <br /> through big changes, like automated collection or a new
               material stream for
@@ -26,7 +26,8 @@ export const RoutePlanning = () => {
               expenditures for
               <br /> trucks, carts, facilities, etc. The purchasing decisions
               can’t get it wrong. You
-              <br /> must know how many trucks you will need.
+              <br /> must know how many trucks you will need.</span>
+              &nbsp;
               <br /> ROC can help. See why large cities like Atlanta and
               Sacramento down to small
               <br /> townships work with ROC. Realize your vision for building

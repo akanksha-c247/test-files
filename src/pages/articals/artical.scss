@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+  
+    .col-6 {
+      width: calc(50% - 10px); // Assuming 10px is the gap you want between the two columns
+  
+      &.left-col {
+        // Additional styles for the left column
+      }
+  
+      &.right-col {
+        display: flex;
+        flex-direction: column;
+  
+        .row {
+          flex: 1;
+  
+          &:first-child {
+            margin-bottom: 10px; // Gap between the two rows
+          }
+        }
+      }
+    }
+  }
+  

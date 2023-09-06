@@ -1,49 +1,55 @@
+@import "../../assets/css/variables.scss";
+
 .container-box {
   width: 100%;
   margin: auto;
-  // display: grid;
   margin-top: 120px;
+
   .content-row {
     display: flex;
+.gap-after {
+  display: block;
+  margin-bottom: 1em; 
+  text-align: left; 
+}
 
     .col-6 {
-      width: 50%;
-      .wrap-text {
+      flex-basis: $col-width;
+      box-sizing: border-box;
+      padding: 0 $col-padding;
+      margin-left: 50px; 
+      margin-right: 10px; 
+      text-align: left;
+      @media (max-width: $breakpoint-md) {
+        flex-basis: 100%;
+        padding: 0;
+      }
+
+      .wrap-text{
         color: #1c519d;
-        // position: fixed;
-        // width: 560px;
-        // top: 0;
-        // left: 0;
-        font-family: "Roboto-Regular", Helvetica;
-        // font-weight: 400;
-        // font-size: 16px;
-        letter-spacing: 0;
-        // line-height: 24px;
         text-align: left;
-        margin-left: 110px;
-      }
-      .solid-waste-system{
+      .solid-waste-system {
         text-align: left;
-        margin-left: 110px;
-        margin-top: 45px;
+        margin-left: auto;
+        margin-right: auto;
       }
-      .route-optimization {
-        text-align: left;
+    }
+      .buttonSize {
+        width: 170px;
+        height: 35px;
+        background-color: rgb(140, 198, 63);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border-radius: 25px;
       }
-      .routingWarper {
-        color: black;
-      }
-      .buttonSize{
-            width: 170px;
-            height: 35px;
-            background-color: rgb(140, 198, 63);
-            margin-left: 103px;
-            margin-top: 20px;
-            border-radius: 25px;
-      }
-      .circle-image{
-        width:200px;
-        height: 500px;
+
+      .circle-image {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }

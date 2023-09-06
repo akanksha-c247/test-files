@@ -1,19 +1,21 @@
 import React from "react";
 import aboutUsImage from "../../assets/img/about.svg";
+import anniversaryImage from "../../assets/img/10yearImage.png";
 import "./about.scss";
 import { Button } from "../../components/inputFields/button";
 export const AboutUs = () => {
   return (
-    <div className="container">
+    <div className="content-container">
       <div className="content-row">
-        <div className="col-6">
-          <div className="aboutUs">
-            <img src={aboutUsImage} alt="image" className="aboutUsImage" />
+        <div className="content-col-6">
+          <div className="content content-bg">
+          <img src={aboutUsImage} alt="image" className="aboutUsImage" />
+          <img src={anniversaryImage} alt="anniversaryImage" className="anniversaryImage" />
           </div>
         </div>
-        <div className="col-6">
+        <div className="content-col-6">
           <div className="content">
-            <h1 className="wrap-text">
+          <h1 className="wrap-text">
               Waste Route Optimization Software
               <br /> Consultants
             </h1>

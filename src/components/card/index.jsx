@@ -1,7 +1,7 @@
 import React from 'react';
 import './card.scss';
 
-const Card = ({ imageUrl, title, content, width, height, bgColor,alt,className }) => {
+const Card = ({ imageUrl, title, content, width, height, bgColor,alt,className,auther }) => {
   const cardStyle = {
     width: `${width}px`,
     height: `${height}px`,
@@ -12,7 +12,8 @@ const Card = ({ imageUrl, title, content, width, height, bgColor,alt,className }
     <div className="card" style={cardStyle}>
       <img src={imageUrl} alt={alt} className={className} />
       <div className="card-content">
-        <h2>{title}</h2>
+        {auther  && <span>{auther}</span>}
+        <h3>{title}</h3>
         <p>{content}</p>
       </div>
     </div>

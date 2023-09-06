@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Main Links",
+    "links": [
+      { "label": "Home", "url": "/" },
+      { "label": "Case Studies", "url": "/about" },
+      { "label": "Public Speaking", "url": "/services" },
+      { "label": "Maps", "url": "/contact" },
+      { "label": "Contact", "url": "/contact" },
+      { "label": "Blog", "url": "/contact" },
+      { "label": "Sitemap", "url": "/contact" }
+    ]
+  },
+  {
+    "label1": "Services",
+    "service": [
+      { "label": "Snow Plow Routing Software", "url": "/contact" },
+      { "label": "Waste Collection Routing", "url": "/contact" },
+      { "label": "Software", "url": "/contact" }
+    ]
+  }
+]

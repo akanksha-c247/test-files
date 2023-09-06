@@ -21,6 +21,22 @@
     --font-style: var(--body-16-medium-font-style);
     --font-weight: var(--body-16-medium-font-weight);
     --letter-spacing: var(--body-16-medium-letter-spacing);
-    --line-height: var(--body-16-medium-line-height);
+    --line-height: var(--body-16-medium-line-height);   
   }
+  $col-width: 50%;
+$col-padding: 15px;
+$breakpoint-md: 768px;
+
+.col-6 {
+  flex-basis: $col-width;
+  box-sizing: border-box;
+  padding: 0 $col-padding;
+
+  @media (max-width: $breakpoint-md) {
+    flex-basis: 100%;
+    padding: 0;
+  }
+}
+  
+
   
